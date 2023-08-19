@@ -35,21 +35,34 @@
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
 
-System.Console.WriteLine("Введите координаты xA: ");
-int xA = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координаты yA: ");
-int yA = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координаты zA: ");
-int zA = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координаты xA: ");
+// int xA = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координаты yA: ");
+// int yA = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координаты zA: ");
+// int zA = int.Parse(Console.ReadLine());
 
-System.Console.WriteLine("Введите координаты xB: ");
-int xB = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координаты yB: ");
-int yB = int.Parse(Console.ReadLine());
-System.Console.WriteLine("Введите координаты zB: ");
-int zB = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координаты xB: ");
+// int xB = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координаты yB: ");
+// int yB = int.Parse(Console.ReadLine());
+// System.Console.WriteLine("Введите координаты zB: ");
+// int zB = int.Parse(Console.ReadLine());
 
-double LengthAB = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2) + Math.Pow(zB - zA, 2));
+// double LengthAB = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2) + Math.Pow(zB - zA, 2));
 
-System.Console.WriteLine($"Расстояние между A и B равно {LengthAB}");
+// System.Console.WriteLine($"Расстояние между A и B равно {LengthAB}");
 
+
+// Задача 23
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+System.Console.WriteLine("Введите число N: ");
+int N = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= N; i++)
+{
+    System.Console.Write($"{i*i*i},");
+}
